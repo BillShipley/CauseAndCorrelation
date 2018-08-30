@@ -20,7 +20,6 @@ The input DAG is a binary matrix that is usually created via the DAG function in
 First, Spirtes uses X->Y  if EVERY inducing path over the observed variables is out of X and into Y, i.e. if X is a direct cause of Y given the observed variables over all inducing paths.  In this function, X->Y if X is a direct cause of Y given the observed variables over any inducing path.  Thus, X->Y means that X is a direct cause of Y given the observed variables, but X and Y might also have common latent causes.  Thus, X<->Y means that neither X nor Y are ever direct causes of the other given the observed variables, and only have common latent causes.
 Second, in this function, X~>Y means that X is an indirect cause of Y given the observed variables but there is no directed path from X to Y.
 }
-<<<<<<< HEAD
 \value{
 if return.matrix=TRUE, a matrix showing the cause-effect relationships between the observed variables.
 (i,j)=1 if inducing path leaves variable i and goes to j
@@ -30,8 +29,6 @@ if return.matrix=TRUE, a matrix showing the cause-effect relationships between t
 \references{
 
 }
-=======
->>>>>>> 9a01f99b865ec3191546809100e83cda28fdf641
 \author{
   Bill Shipley
 }

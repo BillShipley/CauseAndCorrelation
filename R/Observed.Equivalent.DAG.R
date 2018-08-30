@@ -1,9 +1,8 @@
 Observed.Equivalent.DAG<-function (full.DAG, latents = NA,return.graph=FALSE) 
 {
-<<<<<<< HEAD
-   library(ggm)
-=======
->>>>>>> 9a01f99b865ec3191546809100e83cda28fdf641
+
+   library(ggm) # better to use ggm:::nameofthefunction
+
 # needs the ggm library
 # full.DAG is a binary (0/1) matrix produced from DAG() function in ggm
 # latents is a character vector giving the names of the latents

@@ -1,10 +1,6 @@
 Exploratory.path.analysis<-function (dat, upper.bound = 0.5, significance.level = 0.05) 
 {
-<<<<<<< HEAD
-    library(ggm)
-  
-=======
->>>>>>> 9a01f99b865ec3191546809100e83cda28fdf641
+    library(ggm) # better to put this elsewhere or use ggm:::nameofthefunction
     EPA.write <- function(cgraph, dat) {
         nvars <- dim(cgraph)[1]
         if (!is.null(names(dat))) 
