@@ -39,7 +39,14 @@ install.packages("packagename")
 ```
 until all packages are installed. A current bug in `install_github` on Windows prevents the installation of package dependencies of dependencies (`lavaan` and `ggm`).
 
+The `ggm` package has a dependency package `graph`. The `graph` package is in the `Biocondcutor` reposiotry instead of normal R `CRAN`. 
+The code below will check whether `BioManager` package is available to install package from the `Bioconductor` repository.  
+```
+if (!require("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
 
+BiocManager::install("graph")
+```
 ### Step 2
 
 Although this should not be required, for certain packages with compiled code, [Rtools](https://cran.r-project.org/bin/windows/Rtools/) and [MiKTeX](https://miktex.org/) need to be installed on Windows to be able to build source packages. For Mac users, Xcode is required and can be installed through the apple store. Here is a more detailed list of [prerequisites](https://support.rstudio.com/hc/en-us/articles/200486498-Package-Development-Prerequisites) for building source packages for Windows, Mac and Linux.
