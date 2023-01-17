@@ -1,4 +1,4 @@
-export(Causal.Inference,dsep.test,basiSet.mag,DAG.to.MAG,Exploratory.path.analysis,MCX2,Pcor.prob,shipley.test2,vanishing.tetrads,EPA,orient.graph,orient.phaseII.1,gen.perms,gen.data, basiSet.mag, DAG.to.MAG, districtSet, districtGraph)
+export(Causal.Inference,dsep.test,Exploratory.path.analysis,MCX2,Pcor.prob,shipley.test2,vanishing.tetrads,EPA,orient.graph,orient.phaseII.1,gen.perms,gen.data, basiSet.mag, DAG.to.MAG, MAG.to.DAG, districtSet, districtGraph)
 import(graphics)
 import(stats)
 import(utils)
